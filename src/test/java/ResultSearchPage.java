@@ -81,8 +81,6 @@ public class ResultSearchPage {
                 WebElement headerWebElement = AutoTest.driver.findElement(By.linkText(nameHeader));
                 String fullNameHeaderInTitle = headerWebElement.getAttribute("title").trim();
                 ((JavascriptExecutor) AutoTest.driver).executeScript("arguments[0].scrollIntoView(true);", headerWebElement);
-                //if (numberPage == 1){
-                //if (numberPage == 1 || numberPage == 2){
                 if (numberPage == 1){ // только на первой странице вылезает маленькое синее окно, которое в последствии мешает кликнуть на ссылку, поэтому это окно нужно сначала закрыть
                     List<WebElement> closeButtonSideBar = AutoTest.driver.findElements(By.xpath("//*[@id=\"left-sidebar\"]/div/nav/ol/li[4]/ol/li[2]/div/p"));
                     Thread.sleep(800);

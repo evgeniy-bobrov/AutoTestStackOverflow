@@ -17,6 +17,7 @@ public class StartPage {
         fieldSearch.sendKeys(AutoTest.SEARCH_WORD);
     }
 
+    // нажимаем кнопку поиска (лупа)
     @Step
     public void clickButtonSearch (){
         buttonSearch.click();
